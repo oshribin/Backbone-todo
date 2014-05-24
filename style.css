@@ -1,0 +1,151 @@
+body{
+    width: 975px;
+    margin: 0 auto;
+    background: rgb(85, 83, 82);
+}
+
+.todoapp {
+    display: block;
+    background: url("paper2.jpg");
+    width: 975px;
+    min-height: 50%;
+}
+
+.itemEdit{
+    display: none;
+    background: none;
+    position: relative;
+    bottom: 1px;
+}
+
+.title{
+    font-size: 60px;
+    color: #A8A8A8;
+    opacity: 0.5;
+    font-family: "brush Script MT",cursive;
+    position: relative;
+    left:350px;
+    top:50px;
+
+}
+
+.newTodo{
+    border: none;
+    background: none;
+    font-family: georgia italic;
+    font-size: 30px;
+    position: relative;
+    width: 400px;
+    top: 55px;
+
+}
+.newTodo:focus{
+    outline: none;
+    background: inherit;
+    color: #A8A8A8;
+}
+
+.toggleall{
+    display: none;
+    position: relative;
+    top: 55px;
+}
+
+.constant{
+    position: relative;
+    left:300px;
+    width: 550px;
+    margin: 0;
+}
+
+footer{
+    display: none;
+    position:relative;
+    left: 300px;
+    top: 20px;
+}
+footer li{
+    display: inline;
+}
+
+#complete-selected{
+    width: 60px;
+    height: 20px;
+    position: relative;
+    left: 125px;
+}
+
+.todoList{
+    position: relative;
+    top:50px;
+    padding-bottom: 250px;
+
+
+
+}
+.todoList li{
+    list-style-type: none;
+    font-family: georgia italic;
+    color:rgb(120, 119, 118);
+    margin: 6px;
+    position: relative;
+    top:15px;
+    right: 30px;
+    width:500px;
+
+}
+.todoList li.done label {
+    color: #777777;
+    text-decoration: line-through;
+    }
+.todoList li .toggle{
+    position: absolute;
+    text-align: center;
+    left: 5px;
+}
+.todoList li a{
+    position: absolute;
+    left: 480px;
+    bottom: 6px;
+    display: none;
+}
+.todoList li:hover a{
+    display: block;
+
+}
+.todoList li label{
+    position: relative;
+    left:40px;
+    max-width: 50px;
+    word-break:break-word;
+}
+
+.edit .toggle{
+    display: none;
+
+}
+.edit label{
+    display: none;
+} 
+.edit a{
+    display: none;
+}
+.edit .itemEdit{
+    display: block;
+}
+
+.instruction{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+
+button{
+    position: relative;
+    bottom: 80px;
+    right: 70px;
+
+}
+
+
+

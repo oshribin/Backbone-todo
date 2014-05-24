@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+ <head>
+  <meta charset = "UTF-8"/>
+  <title>Backbone &#8226; todoApp</title>
+  <link rel = "stylesheet" href = "style.css">
+ </head>
+
+ <body>
+  <div class = "todoapp">
+   <header>
+    <h1 class = "title">Todoapp</h1>
+   </header>
+
+
+
+   <section class = "constant">
+    <input type="checkbox" class = "toggleAll" >
+    <input type = "text" class = "newTodo" placeholder = "Whats need to be done ?" maxlength="60">
+    <ul class = "todoList">
+    </ul>
+   </section>
+            
+
+
+
+   <footer class = "footer">
+     <label class = "instructio"> 
+     <p class = "instruction">CLICK TWICE ON TODO TO EDIT</p>
+     <label>
+     <ul class = "filters">
+      <li><a href = "#" id = "showall">All</a></li>
+      <li><a href = "#/selected" id = "showselected">selected</a></li>
+      <li><a href = "#/completed" id = "showcompleted">completed</a></li>
+      <li><a href = "#/uncompleted" id = "showuncompleted">uncompleted
+      </a></li>
+     </ul>
+     <div class = "buttons">
+      <button class = "complete-selected">
+       complete seleceted
+      </button>
+      <button class="delete-selected">
+       delet selected
+      </button>
+      <button class="recomplete-selected">
+       re-complete selected
+      </button>
+      <button class = "collor-selected">
+       mark selected
+      </button>
+    </div>
+   </footer>
+
+   <script src = "jquery-1.11.0.js"></script>
+   <script src = "underscore-min.js"></script>
+   <script src = "backbone-min.js"></script>
+   <script src = "backbone.localStorage-min.js"></script>
+   <script src = "model.js"></script>
+
+
+
+            <!--templates-->
+
+            <script type="text/template" id = "item-template">
+            <div class = "itemView">
+            <input type = "checkbox" class = "toggle" <%= selected ? "checked = 'checked'" : "" %> />
+            <label class = "content"><%= content %></label> 
+            <a class = erase>x</a>
+            <input type = "text" class = "itemEdit" value = "<%= content %>"/>
+            </div>
+            </script>
+        </div>
+
+    </body>
+
+
+</html>
